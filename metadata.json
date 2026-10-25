@@ -1,0 +1,6 @@
+{
+  "name": "Đừng Im Lặng - Phòng Ngừa Bạo Lực Học Đường",
+  "description": "Cổng thông tin và chiến dịch truyền thông toàn diện về phòng ngừa bạo lực học đường: cẩm nang học sinh, phụ huynh, thư viện truyền thông, diễn đàn chia sẻ và kết nối hỗ trợ khẩn cấp 111.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

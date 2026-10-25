@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #fbf9f5;
+  --color-sand: #f3efe6;
+  --color-line: #e2ddd5;
+  --color-ink: #1c1917;
+  --color-muted: #57534e;
+  --color-navy: #162336;
+  --color-terra: #c84b31;
+  --color-sage: #2b6653;
+  --color-ochre: #d99b26;
+  --font-sans: "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: "Lora", Georgia, "Times New Roman", serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1c1917;
+    background-color: #fbf9f5;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .font-editorial {
+    font-family: "Lora", Georgia, "Times New Roman", serif;
+  }
+}
+
+/* Editorial thin scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f3efe6;
+}
+::-webkit-scrollbar-thumb {
+  background: #d6cfc2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c4bcae;
+}
+
+/* Legacy animation names retained for status pulses */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease-out both;
+}
+
+input[type="checkbox"] {
+  accent-color: #c84b31;
+}
